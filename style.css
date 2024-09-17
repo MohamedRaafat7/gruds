@@ -1,0 +1,178 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #2e2e2e;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #e0e0e0;
+}
+
+section {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+    background: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.head {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    color: #ff6f61;
+}
+
+p {
+    font-size: 1.2rem;
+    color: #cfcfcf;
+}
+
+input, button {
+    border: none;
+    outline: none;
+}
+
+input[type="text"], input[type="number"] {
+    width: calc(100% - 20px);
+    height: 35px;
+    border-radius: 8px;
+    padding: 0 10px;
+    margin-bottom: 1rem;
+    background-color: #444;
+    color: #e0e0e0;
+    
+}
+input:hover{
+    transform: scale(1.01);
+}
+input:focus {
+    background-color: #555;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 0 15px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    background-color: #615e5e;
+    
+}
+
+#btn1,#btn2{
+    margin-top: 1rem;
+}
+button:hover {
+    background-color: #082c62;
+    transform: scale(1.02);
+}
+
+button:active {
+    background-color: #132dd5;
+}
+
+#submit {
+    background-color: #5bc0de;
+}
+
+#submit:hover {
+    background-color: #31b0d5;
+}
+
+#total {
+    background-color: #5bc0de;
+    color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: bold;
+    margin-left: 10px;
+    
+}
+
+small {
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #222;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    margin-bottom:1rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #555;
+}
+
+table th {
+    background-color: #444;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background-color: #333;
+}
+
+table tr:nth-child(odd) {
+    background-color: #2b2b2b;
+}
+
+table button {
+    background-color: #5bc0de;
+}
+
+table button:hover {
+    background-color: #31b0d5;
+}
+
+#search {
+    width: calc(100% - 20px);
+    height: 35px;
+    border-radius: 8px;
+    padding: 0 10px;
+    background-color: #444;
+    color: #e0e0e0;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.dd {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+#deletall {
+    background-color: #d9534f;
+    display:none;
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    
+}
+
+#deletall:hover {
+    background-color: #c9302c;
+    transform: scale(1.02);
+}
+

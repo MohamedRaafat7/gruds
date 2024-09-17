@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>gruds</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <section>
+<div class="head">
+        <h1>CRUDS</h1>
+        <p>Product Management System</p>
+
+</div>
+<div class="inputs" style="text-align: center; ">
+
+<input type="text" placeholder="title" id="title">
+<div class="prices" >
+    <input onkeyup="get_total()"    type="number" placeholder="price" id="price">
+    <input  onkeyup="get_total()"  type="number" placeholder="taxes" id="taxes">
+    <input  onkeyup="get_total()"   type="number" placeholder="ads" id="ads">
+    <input  onkeyup="get_total()"  type="number" placeholder="discound" id="discound">
+    <!-- <button id="btn">Total=></button> -->
+   <small>Total=>: <span id="total">0</span></small>
+</div>
+<input type="number" placeholder="count" id="count">
+<input type="text" placeholder="catogry" id="catogry">
+<button id="submit" onclick="creat()">create</button>
+</div>
+<div class="outputs" style="text-align: center; ">
+    
+
+    <input type="text" id="search" placeholder="search" onkeyup=" search2(this.value)" >
+    <button id="btn1" onclick="seearch(this.id)">search by titile</button>
+    <button id="btn2" onclick="seearch(this.id)">search by catogry</button>
+</div>
+<div class="dd">
+    <button id="deletall" onclick="deletall()">Delete All</button>
+
+</div>
+<table> 
+<tr>
+    <th>id</th>
+    <th>title</th>
+    <th>price</th>
+    <th>taxes</th>
+    <th>ads</th>
+    <th>discound</th>
+    <th>Total</th>
+    <th>count</th>
+    <th>catogry </th>
+    <th>update</th>
+    <th>delete </th>
+</tr>
+<tbody  id="tbody">
+
+   
+</tbody>
+</table>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
